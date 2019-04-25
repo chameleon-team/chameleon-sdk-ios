@@ -45,8 +45,6 @@
     self.textView.backgroundColor = [UIColor whiteColor];
     self.textView.delegate = self;
     [self.view addSubview:self.textView];
-    self.textView.text = @"http://10.179.17.54:8000/pages/index/index?cml_addr=http://10.179.17.54:8000/weex/chameleon-bridge.js";
-
     self.textView.text = @"http://172.22.139.13:8000/pages/index/index?cml_addr=http://172.22.139.13:8000/weex/chameleon-bridge.js&name=chameleon";
     
     UIButton *btn = [UIButton new];
