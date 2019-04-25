@@ -1,8 +1,15 @@
 PODS:
   - boost-for-react-native (1.63.0)
   - Chameleon (0.1.0):
+    - DoubleConversion
+    - Folly
+    - glog
     - JSONModel
-    - Masonry (~> 0.6.3)
+    - Masonry (> 0.6.3)
+    - React
+    - SDWebImage (= 3.7.6)
+    - SocketRocket
+    - yoga
   - DoubleConversion (1.1.6)
   - Folly (2016.10.31.00):
     - boost-for-react-native
@@ -10,7 +17,9 @@ PODS:
     - glog
   - glog (0.3.5)
   - JSONModel (1.8.0)
-  - Masonry (0.6.4)
+  - Masonry (1.1.0)
+  - React (0.57.6):
+    - React/Core (= 0.57.6)
   - React/Core (0.57.6):
     - yoga (= 0.57.6.React)
   - React/CxxBridge (0.57.6):
@@ -41,6 +50,10 @@ PODS:
     - React/Core
     - React/fishhook
     - React/RCTBlob
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - SocketRocket (0.5.1)
   - WeexSDK (0.19.0.2)
   - yoga (0.57.6.React)
 
@@ -55,35 +68,47 @@ DEPENDENCIES:
   - React/RCTNetwork (from `../Chamleon/react_native/node_modules/react-native`)
   - React/RCTText (from `../Chamleon/react_native/node_modules/react-native`)
   - React/RCTWebSocket (from `../Chamleon/react_native/node_modules/react-native`)
+  - SocketRocket
   - WeexSDK (~> 0.19.0.2)
   - yoga (from `../Chamleon/react_native/node_modules/react-native/ReactCommon/yoga`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - boost-for-react-native
+    - JSONModel
+    - Masonry
+    - SDWebImage
+    - SocketRocket
+    - WeexSDK
+
 EXTERNAL SOURCES:
   Chameleon:
-    :path: ../Chamleon/
+    :path: "../Chamleon/"
   DoubleConversion:
-    :podspec: ../Chamleon/react_native/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec
+    :podspec: "../Chamleon/react_native/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   Folly:
-    :podspec: ../Chamleon/react_native/node_modules/react-native/third-party-podspecs/Folly.podspec
+    :podspec: "../Chamleon/react_native/node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
-    :podspec: ../Chamleon/react_native/node_modules/react-native/third-party-podspecs/GLog.podspec
+    :podspec: "../Chamleon/react_native/node_modules/react-native/third-party-podspecs/GLog.podspec"
   React:
-    :path: ../Chamleon/react_native/node_modules/react-native
+    :path: "../Chamleon/react_native/node_modules/react-native"
   yoga:
-    :path: ../Chamleon/react_native/node_modules/react-native/ReactCommon/yoga
+    :path: "../Chamleon/react_native/node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  Chameleon: 12a5d81270260f1cfd2e49daaf9f182f49eac916
+  Chameleon: 944110d982ee9d21d73385a4789d0e282b903a60
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
   Folly: c89ac2d5c6ab169cd7397ef27485c44f35f742c7
   glog: e8acf0ebbf99759d3ff18c86c292a5898282dcde
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
-  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   React: f5cc6daa21f0c674c7433a5a0e43dd03c6fa0bab
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   WeexSDK: 0515e386d0eae3400ed8e55f31f198ae35acce44
   yoga: 37dd828e4753519ed56ba743869d8ee66ee292ba
 
-PODFILE CHECKSUM: ba99a5772b343de9ab3db051e1b55cf0134e3f6c
+PODFILE CHECKSUM: 4b1ae8c591b21ae050ee607183d0e7b0e4322ee8
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.6.1

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of Chameleon.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Sun Li/Chameleon",
+  "homepage": "https://github.com/chameleon-team/chameleon-sdk-ios",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "Sun Li": "sunli@didichuxing.com"
   },
   "source": {
-    "git": "https://github.com/Sun Li/Chameleon.git",
+    "git": "https://github.com/chameleon-team/chameleon-sdk-ios.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -30,7 +30,28 @@
 
     ],
     "Masonry": [
-      "~> 0.6.3"
+      "> 0.6.3"
+    ],
+    "SDWebImage": [
+      "3.7.6"
+    ],
+    "SocketRocket": [
+
+    ],
+    "React": [
+
+    ],
+    "yoga": [
+
+    ],
+    "DoubleConversion": [
+
+    ],
+    "glog": [
+
+    ],
+    "Folly": [
+
     ]
   }
 }
