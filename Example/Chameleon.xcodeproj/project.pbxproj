@@ -17,6 +17,7 @@
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BEC5940F228D8CC000E93083 /* CMLWeexOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC5940D228D8CC000E93083 /* CMLWeexOperationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DE126E9BB1302510A381845 /* Pods-Chameleon_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chameleon_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chameleon_Example/Pods-Chameleon_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BEC5940B228D8CC000E93083 /* CMLWeexOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMLWeexOperationViewController.h; sourceTree = "<group>"; };
+		BEC5940D228D8CC000E93083 /* CMLWeexOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMLWeexOperationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 		6003F593195388D20070C39A /* Example for Chameleon */ = {
 			isa = PBXGroup;
 			children = (
+				BEC5940A228D8CC000E93083 /* demo */,
 				6003F59C195388D20070C39A /* CMAppDelegate.h */,
 				6003F59D195388D20070C39A /* CMAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -110,6 +114,15 @@
 				6003F59B195388D20070C39A /* Chameleon-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEC5940A228D8CC000E93083 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				BEC5940B228D8CC000E93083 /* CMLWeexOperationViewController.h */,
+				BEC5940D228D8CC000E93083 /* CMLWeexOperationViewController.m */,
+			);
+			path = demo;
 			sourceTree = "<group>";
 		};
 		F48BE482F7E029F5D0330E3D /* Pods */ = {
@@ -250,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC5940F228D8CC000E93083 /* CMLWeexOperationViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CMAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CMViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
