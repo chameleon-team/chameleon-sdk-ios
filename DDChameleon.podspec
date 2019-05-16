@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-    s.name             = 'Chameleon'
+    s.name             = 'DDChameleon'
     s.version          = '1.0.0'
     s.ios.deployment_target = '9.0'
     

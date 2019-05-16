@@ -1,5 +1,5 @@
 PODS:
-  - Chameleon (1.0.0):
+  - DDChameleon (1.0.0):
     - JSONModel
     - Masonry
     - SDWebImage
@@ -14,7 +14,7 @@ PODS:
   - WeexSDK (0.19.0.2)
 
 DEPENDENCIES:
-  - Chameleon (from `../`)
+  - DDChameleon (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -25,17 +25,17 @@ SPEC REPOS:
     - WeexSDK
 
 EXTERNAL SOURCES:
-  Chameleon:
+  DDChameleon:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Chameleon: bf9a2c656973cdc6431de1dc1bf2dd14c4d376dd
+  DDChameleon: 7121a0387c0b214ac46f9209385fbb3cc03313ed
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   WeexSDK: 0515e386d0eae3400ed8e55f31f198ae35acce44
 
-PODFILE CHECKSUM: f6490e2a324886248a92833ba0a341e22fa4137e
+PODFILE CHECKSUM: 4dd667fb8b7401d3d8800e5d6c4d407c0565eda8
 
 COCOAPODS: 1.6.1

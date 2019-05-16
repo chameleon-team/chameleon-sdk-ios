@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Chameleon
+## DDChameleon
 
 Copyright (c) 2018 Chameleon-Team <ChameleonCore@didiglobal.com>
 
