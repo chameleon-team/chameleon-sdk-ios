@@ -4,9 +4,7 @@
 //  Created by Chameleon-Team on 2018/6/6.
 //
 
-#import "JSONModel.h"
-
-
+#import <JSONModel/JSONModel.h>
 /*
  这里面的方法都是给CMLChameleonCache用的。不是这个模块的修改就别看了。
  */

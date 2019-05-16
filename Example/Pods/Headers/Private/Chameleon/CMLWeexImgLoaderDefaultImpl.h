@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/CMLWeex/Module/CMLWeexImgLoaderDefaultImpl.h
+../../../../../sdk_src/CMLWeex/Module/CMLWeexImgLoaderDefaultImpl.h

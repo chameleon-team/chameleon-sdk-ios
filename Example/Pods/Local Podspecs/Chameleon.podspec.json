@@ -1,6 +1,6 @@
 {
   "name": "Chameleon",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "platforms": {
     "ios": "9.0"
   },
@@ -16,7 +16,7 @@
   },
   "source": {
     "git": "https://github.com/chameleon-team/chameleon-sdk-ios.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "source_files": "sdk_src/**/*",
   "public_header_files": "Pod/Classes/**/*.h",

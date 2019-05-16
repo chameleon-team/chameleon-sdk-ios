@@ -4,7 +4,7 @@
 //  Created by Chameleon-Team on 2018/6/6.
 //
 
-#import "JSONModel.h"
+#import <JSONModel/JSONModel.h>
 
 typedef NS_ENUM(NSUInteger, CMLChameleonCacheKind) {
     CMLChameleonCacheUnknown = 0,

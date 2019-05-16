@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/CMLCommon/Module/CMLClipboardModule.h
+../../../../../sdk_src/CMLCommon/Module/CMLClipboardModule.h

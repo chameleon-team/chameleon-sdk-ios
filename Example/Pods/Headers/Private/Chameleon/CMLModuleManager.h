@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/CMLCommon/ModuleManager/CMLModuleManager.h
+../../../../../sdk_src/CMLCommon/ModuleManager/CMLModuleManager.h

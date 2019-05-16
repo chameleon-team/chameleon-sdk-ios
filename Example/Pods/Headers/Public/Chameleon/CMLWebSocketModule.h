@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/CMLCommon/Module/CMLWebSocketModule.h
+../../../../../sdk_src/CMLCommon/Module/CMLWebSocketModule.h

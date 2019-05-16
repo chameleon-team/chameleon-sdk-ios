@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/CMLCommon/Config/CMLConfig.h
+../../../../../sdk_src/CMLCommon/Config/CMLConfig.h

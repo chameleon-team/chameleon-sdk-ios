@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/CMLWeex/Module/CMLWeexBridgeModule.h
+../../../../../sdk_src/CMLWeex/Module/CMLWeexBridgeModule.h
