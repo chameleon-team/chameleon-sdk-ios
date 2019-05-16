@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/Classes/CMLWeex/CMLWeexService.h
+../../../../../Chamleon/sdk_src/CMLWeex/CMLWeexService.h

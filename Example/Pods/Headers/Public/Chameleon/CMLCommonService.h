@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/Classes/CMLCommon/Service/CMLCommonService.h
+../../../../../Chamleon/sdk_src/CMLCommon/Service/CMLCommonService.h

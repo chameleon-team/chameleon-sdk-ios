@@ -3,28 +3,6 @@
 platform :ios, '9.0'
 
 target 'Chameleon_Example' do
-    
     #Chameleon
     pod 'Chameleon', :path => '../Chamleon/'
-    
-    #Weex
-    pod 'WeexSDK', '~> 0.19.0.2'
-    pod 'SocketRocket'
-    pod 'SDWebImage', '3.7.6'
-
-    #react_native
-    pod 'React', :path => '../Chamleon/react_native/node_modules/react-native', :subspecs => [
-    'Core',
-    'CxxBridge', # 如果RN版本 >= 0.45则加入此行
-    'DevSupport', # 如果RN版本 >= 0.43，则需要加入此行才能开启开发者菜单
-    'RCTText',
-    'RCTNetwork',
-    'RCTWebSocket', # 这个模块是用于调试功能的
-    ]
-
-    pod 'yoga', :path => '../Chamleon/react_native/node_modules/react-native/ReactCommon/yoga'
-    pod 'DoubleConversion', :podspec => '../Chamleon/react_native/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
-    pod 'glog', :podspec => '../Chamleon/react_native/node_modules/react-native/third-party-podspecs/GLog.podspec'
-    pod 'Folly', :podspec => '../Chamleon/react_native/node_modules/react-native/third-party-podspecs/Folly.podspec'
-    
 end

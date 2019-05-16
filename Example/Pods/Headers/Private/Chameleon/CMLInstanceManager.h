@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/Classes/CMLCommon/Instance/CMLInstanceManager.h
+../../../../../Chamleon/sdk_src/CMLCommon/Instance/CMLInstanceManager.h

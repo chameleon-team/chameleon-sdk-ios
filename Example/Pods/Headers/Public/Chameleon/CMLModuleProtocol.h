@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/Classes/CMLModuleProtocol.h
+../../../../../Chamleon/sdk_src/CMLModuleProtocol.h

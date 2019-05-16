@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/Classes/CMLWeex/Socket/SRWebSocket+CMLWeex.h
+../../../../../Chamleon/sdk_src/CMLWeex/Socket/SRWebSocket+CMLWeex.h

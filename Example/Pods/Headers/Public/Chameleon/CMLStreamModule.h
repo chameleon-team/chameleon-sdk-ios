@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/Classes/CMLCommon/Module/CMLStreamModule.h
+../../../../../Chamleon/sdk_src/CMLCommon/Module/CMLStreamModule.h

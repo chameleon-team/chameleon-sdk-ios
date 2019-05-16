@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/Classes/CMLCommon/Bridge/CMLModuleBridge.h
+../../../../../Chamleon/sdk_src/CMLCommon/Bridge/CMLModuleBridge.h

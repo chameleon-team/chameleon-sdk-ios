@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/Classes/CMLWeex/RenderPage/CMLWeexRenderPage.h
+../../../../../Chamleon/sdk_src/CMLWeex/RenderPage/CMLWeexRenderPage.h

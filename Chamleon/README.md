@@ -1,6 +1,5 @@
 # Chameleon
 
-[![CI Status](https://img.shields.io/travis/Sun Li/Chameleon.svg?style=flat)](https://travis-ci.org/Sun Li/Chameleon)
 [![Version](https://img.shields.io/cocoapods/v/Chameleon.svg?style=flat)](https://cocoapods.org/pods/Chameleon)
 [![License](https://img.shields.io/cocoapods/l/Chameleon.svg?style=flat)](https://cocoapods.org/pods/Chameleon)
 [![Platform](https://img.shields.io/cocoapods/p/Chameleon.svg?style=flat)](https://cocoapods.org/pods/Chameleon)
@@ -22,7 +21,7 @@ pod 'Chameleon'
 
 ## Author
 
-Sun Li, sunli@didichuxing.com
+Chameleon Team, ChameleonCore@didiglobal.com
 
 ## License
 

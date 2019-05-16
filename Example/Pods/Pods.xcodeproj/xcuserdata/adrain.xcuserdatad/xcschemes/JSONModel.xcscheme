@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B5A94D8151A5E3B80345F61A45E2D05"
+               BlueprintIdentifier = "3EF547FF974760B96F27F86E4A2CC0C0"
+               BuildableName = "libJSONModel.a"
                BlueprintName = "JSONModel"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libJSONModel.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

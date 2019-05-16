@@ -1,1 +1,1 @@
-../../../../../Chamleon/sdk_src/Classes/CMLCommon/Tools/NSDictionary+CMLExtends.h
+../../../../../Chamleon/sdk_src/CMLCommon/Tools/NSDictionary+CMLExtends.h
