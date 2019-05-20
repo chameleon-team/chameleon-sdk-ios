@@ -13,11 +13,10 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* CMAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* CMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* CMViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		BEC5940F228D8CC000E93083 /* CMLWeexOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC5940D228D8CC000E93083 /* CMLWeexOperationViewController.m */; };
+		BEAA009122925DBB00D272E1 /* CMLWeexEntrancePage.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAA009022925DBB00D272E1 /* CMLWeexEntrancePage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,16 +31,14 @@
 		6003F59B195388D20070C39A /* Chameleon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chameleon-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* CMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* CMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* CMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		66B7882E2CADD7B5BE44F611 /* Pods_Chameleon_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chameleon_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DE126E9BB1302510A381845 /* Pods-Chameleon_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chameleon_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chameleon_Example/Pods-Chameleon_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BEC5940B228D8CC000E93083 /* CMLWeexOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMLWeexOperationViewController.h; sourceTree = "<group>"; };
-		BEC5940D228D8CC000E93083 /* CMLWeexOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMLWeexOperationViewController.m; sourceTree = "<group>"; };
+		BE64441D22925D1C00F4107A /* CMLWeexEntrancePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMLWeexEntrancePage.h; sourceTree = "<group>"; };
+		BEAA009022925DBB00D272E1 /* CMLWeexEntrancePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMLWeexEntrancePage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +92,6 @@
 				6003F59C195388D20070C39A /* CMAppDelegate.h */,
 				6003F59D195388D20070C39A /* CMAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* CMViewController.h */,
-				6003F5A6195388D20070C39A /* CMViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -119,8 +114,8 @@
 		BEC5940A228D8CC000E93083 /* demo */ = {
 			isa = PBXGroup;
 			children = (
-				BEC5940B228D8CC000E93083 /* CMLWeexOperationViewController.h */,
-				BEC5940D228D8CC000E93083 /* CMLWeexOperationViewController.m */,
+				BE64441D22925D1C00F4107A /* CMLWeexEntrancePage.h */,
+				BEAA009022925DBB00D272E1 /* CMLWeexEntrancePage.m */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -213,6 +208,8 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Chameleon_Example/Pods-Chameleon_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/DDChameleon/DDChameleon.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 				"${PODS_ROOT}/WeexSDK/pre-build/native-bundle-main.js",
 				"${PODS_ROOT}/WeexSDK/pre-build/weex-main-jsfm.js",
 				"${PODS_ROOT}/WeexSDK/pre-build/weex-polyfill.js",
@@ -223,6 +220,8 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DDChameleon.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/native-bundle-main.js",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/weex-main-jsfm.js",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/weex-polyfill.js",
@@ -263,9 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEC5940F228D8CC000E93083 /* CMLWeexOperationViewController.m in Sources */,
 				6003F59E195388D20070C39A /* CMAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* CMViewController.m in Sources */,
+				BEAA009122925DBB00D272E1 /* CMLWeexEntrancePage.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

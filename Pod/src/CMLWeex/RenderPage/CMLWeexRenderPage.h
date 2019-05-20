@@ -12,11 +12,6 @@
 @interface CMLWeexRenderPage : CMLRenderPage
 
 /**
- 隐藏web 加载样式
- */
-@property (nonatomic, assign) BOOL hideWebProgressBar;
-
-/**
  weex页面发起请求的公参
  */
 @property (nonatomic, copy) NSDictionary *commonParameter;

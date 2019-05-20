@@ -14,7 +14,7 @@
 #import "NSString+CMLExtends.h"
 #import "NSDictionary+CMLExtends.h"
 
-@interface CMLWeexRenderPage ()<WKNavigationDelegate>
+@interface CMLWeexRenderPage () <WKNavigationDelegate>
 
 @property (nonatomic, assign) CMLRenderURLType renderType;
 @property (nonatomic, assign) NSTimeInterval initStartTime;
@@ -40,8 +40,9 @@
 @implementation CMLWeexRenderPage
 
 #pragma mark - 重载父类方法
--(void)creatRenderInstance{
-    
+
+-(void)creatRenderInstance
+{
     self.currentEnvironment = CMLCurrentRunEnvironmentWeex;
     
     //Page初始化完成后,记录开始初始化的时间。
@@ -73,12 +74,11 @@
     [_render setOnScroll:^(CGPoint contentOffset) {
         [weakSelf onScroll:contentOffset];
     }];
-    
 }
 
 // 作为公共参数传入
-- (NSDictionary *)standardQueryDict {
-    
+- (NSDictionary *)standardQueryDict
+{
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     [dict setObject:CMLSDKVersion forKey:@"cml_sdk"];
     [dict setObject:self.url?:@"" forKey:@"cml_url"];
@@ -92,7 +92,7 @@
         
         CMLWeexCache *cache = (CMLWeexCache *)[CMLEnvironmentManage chameleon].weexService.cache;
         [cache getBundleCacheOfJSBundleUrl:self.bundleUrl completion:^(NSString *url, NSDictionary *parameter) {
-            if(url.length > 0){
+            if (url.length > 0) {
                 //本地默认bundle、remote、local加载都会走到这里
                 if(self.renderType != CMLRenderURLTypeDefaultLocalBundle){
                     NSNumber *renderTypeNum = [parameter valueForKey:@"renderType"];
@@ -106,7 +106,6 @@
                 self.rendingURL = url;
                 [self.render renderWithURL:[NSURL URLWithString:url] options:@{@"query" : [param copy]} data:nil];
                 self.queryDic = [param copy];
-                
             } else {
                 CMLRenderFailerType failerType = CMLRenderFailerTypeNone;
                 //如果是加载的本地默认缓存，则failerType和远端bundle、本地bundle不同
@@ -131,7 +130,8 @@
     }
 }
 
-- (void)reloadJSBundle{
+- (void)reloadJSBundle
+{
     /*重新加载不生效，通过先销毁，在创建加载的方式实现重新加载功能*/
     [_render destroyInstance];
     _render = nil;
@@ -139,15 +139,18 @@
     [self loadJSBundle];
 }
 
-- (CMLCache *)cmlCacheInstance{
+- (CMLCache *)cmlCacheInstance
+{
     return [CMLEnvironmentManage chameleon].weexService.cache;
 }
 
-- (void)destroyInstance{
+- (void)destroyInstance
+{
     [_render destroyInstance];
 }
 
--(void)rendWithCustomBundleUrl:(NSString *)bundleUrl params:(NSDictionary *)params{
+-(void)rendWithCustomBundleUrl:(NSString *)bundleUrl params:(NSDictionary *)params
+{
     NSString *url = nil;
     if(bundleUrl.length > 0){
         url = bundleUrl;
@@ -183,7 +186,9 @@
         [_render fireGlobalEvent:@"cmlBridgeChannel" params:parms];
     }
 }
+
 #pragma mark - Weex delegate
+
 - (void)onCreate:(UIView *)view
 {
     self.currentEnvironment = CMLCurrentRunEnvironmentWeex;
@@ -223,7 +228,6 @@
 
 - (void)onRenderProgress:(CGRect)renderRect
 {
-    
 }
 
 - (void)onJSRuntimeException:(WXJSExceptionInfo *)exception
@@ -255,11 +259,11 @@
 
 - (void)onScroll:(CGPoint)contentOffset
 {
-    
 }
 
 #pragma mark - WebView delegate
-- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error
+{
     CMLRenderFailerType failerType = CMLRenderFailerTypeNone;
     NSString *localBundlePath = [[CMLEnvironmentManage chameleon].weexService.config.defaultBundlePaths objectForKey:self.url];
     if(self.renderType == CMLRenderURLTypeWeb){
@@ -274,12 +278,13 @@
     [self dealWithFailerType:failerType];
 }
 
-- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation {
-    
+- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation
+{
 }
 
 #pragma mark - 降级状态机
-- (void)dealWithFailerType:(CMLRenderFailerType) failerType{
+- (void)dealWithFailerType:(CMLRenderFailerType) failerType
+{
     dispatch_async(dispatch_get_main_queue(), ^{
         switch (failerType) {
             case CMLRenderFailerTypeRemoteBundle:
@@ -307,7 +312,6 @@
                 break;
         }
     });
-    
 }
 
 @end

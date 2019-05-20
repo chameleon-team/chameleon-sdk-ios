@@ -6,33 +6,44 @@
 //
 
 #import "CMLNavigationBar.h"
+
 #import "Masonry.h"
+#import "CMLCommonDefine.h"
 
-@implementation CMLNavigationBar {
-    UIButton *_backBtn;
-    UILabel *_titleLabel;
-    UIView *_lineView;
-}
+@interface CMLNavigationBar ()
 
-+ (CMLNavigationBar *)defaultNavigationBarWithTitle:(NSString *)title {
+@property (nonatomic, strong) UIButton *backBtn;
+@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIView *lineView;
+
+@end
+//
+@implementation CMLNavigationBar
+//{
+//    UIButton *_backBtn;
+//    UILabel *_titleLabel;
+//    UIView *_lineView;
+//}
+
++ (CMLNavigationBar *)defaultNavigationBarWithTitle:(NSString *)title
+{
     CMLNavigationBar *navigationBar = [[CMLNavigationBar alloc] initWithtitle:title];
     return navigationBar;
 }
 
-- (instancetype)initWithtitle:(NSString *)title{
-    if(self = [super init]){
+- (instancetype)initWithtitle:(NSString *)title
+{
+    if (self = [super init]) {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_backBtn setTitle:@"<" forState:UIControlStateNormal];
-        [_backBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_backBtn setImage:DDChameleonImage(@"cml_nav_icon_back") forState:UIControlStateNormal];
         [_backBtn addTarget:self action:@selector(backBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
-        _backBtn.titleLabel.font = [UIFont systemFontOfSize:20];
         [self addSubview:_backBtn];
         
         _titleLabel = [UILabel new];
         _titleLabel.text = title;
         _titleLabel.textColor = [UIColor blackColor];
         _titleLabel.textAlignment = NSTextAlignmentCenter;
-        _titleLabel.font = [UIFont systemFontOfSize:24];
+        _titleLabel.font = [UIFont boldSystemFontOfSize:18];
         [self addSubview:_titleLabel];
         
         _lineView = [UIView new];
@@ -42,7 +53,8 @@
     return self;
 }
 
-- (void)layoutSubviews{
+- (void)layoutSubviews
+{
     [_backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self);
         make.bottom.equalTo(self);
@@ -61,11 +73,13 @@
     }];
 }
 
-- (void)refreshTitle:(NSString *)title{
+- (void)refreshTitle:(NSString *)title
+{
     _titleLabel.text = title;
 }
 
-- (void)backBtnClicked:(UIButton *)btn {
+- (void)backBtnClicked:(UIButton *)btn
+{
     if(self.backAction){
         self.backAction();
     }

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HIZ-z7-xJI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,19 +14,94 @@
         <scene sceneID="wQg-tq-qST">
             <objects>
                 <viewController id="whP-gf-Uak" customClass="CMLWeexOperationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PVC-vz-exA"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="-1961" y="448"/>
+        </scene>
+        <!--Chameleon调试-->
+        <scene sceneID="qIM-tY-taC">
+            <objects>
+                <viewController storyboardIdentifier="CMLWeexEntrancePage" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c5O-vc-HUN" customClass="CMLWeexEntrancePage" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UOS-pD-aGV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="http://172.22.139.13:8000/pages/index/index?cml_addr=http://172.22.139.13:8000/weex/chameleon-bridge.js&amp;name=chameleon" translatesAutoresizingMaskIntoConstraints="NO" id="9OK-OB-ZQz">
+                                <rect key="frame" x="15" y="115" width="345" height="130"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Zie-oa-Pxe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="c5O-vc-HUN" id="VN0-Ar-ggh"/>
+                                </connections>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请填写Weex Bundle的链接：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rM3-06-AOo">
+                                <rect key="frame" x="15" y="84" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lav-TX-i08">
+                                <rect key="frame" x="15" y="265" width="345" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ABR-RC-lvX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="跳转"/>
+                                <connections>
+                                    <action selector="creatWeexView:" destination="c5O-vc-HUN" eventType="touchUpInside" id="pHP-J4-ELI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9OK-OB-ZQz" firstAttribute="leading" secondItem="sXb-0C-ZUH" secondAttribute="leading" constant="15" id="5uj-lP-uTZ"/>
+                            <constraint firstItem="rM3-06-AOo" firstAttribute="leading" secondItem="sXb-0C-ZUH" secondAttribute="leading" constant="15" id="Hwr-y8-hus"/>
+                            <constraint firstItem="sXb-0C-ZUH" firstAttribute="trailing" secondItem="rM3-06-AOo" secondAttribute="trailing" constant="15" id="JWC-I5-fsh"/>
+                            <constraint firstItem="Lav-TX-i08" firstAttribute="top" secondItem="9OK-OB-ZQz" secondAttribute="bottom" constant="20" id="S6h-is-Txz"/>
+                            <constraint firstItem="Lav-TX-i08" firstAttribute="leading" secondItem="sXb-0C-ZUH" secondAttribute="leading" constant="15" id="XeW-1m-PHP"/>
+                            <constraint firstItem="sXb-0C-ZUH" firstAttribute="trailing" secondItem="9OK-OB-ZQz" secondAttribute="trailing" constant="15" id="iTp-es-t1W"/>
+                            <constraint firstItem="rM3-06-AOo" firstAttribute="top" secondItem="sXb-0C-ZUH" secondAttribute="top" constant="20" id="mdS-9r-MSF"/>
+                            <constraint firstItem="9OK-OB-ZQz" firstAttribute="top" secondItem="rM3-06-AOo" secondAttribute="bottom" constant="10" id="uB4-r1-OJZ"/>
+                            <constraint firstItem="sXb-0C-ZUH" firstAttribute="trailing" secondItem="Lav-TX-i08" secondAttribute="trailing" constant="15" id="yNS-XB-Yg4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sXb-0C-ZUH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chameleon调试" id="ZtP-V4-wcM"/>
+                    <connections>
+                        <outlet property="jumpBtn" destination="Lav-TX-i08" id="wPY-52-cu1"/>
+                        <outlet property="textView" destination="9OK-OB-ZQz" id="oIJ-qJ-SEE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="naB-lg-HTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1429.5999999999999" y="461.91904047976016"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qN1-Bk-zK5">
+            <objects>
+                <navigationController id="HIZ-z7-xJI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AQg-7A-4iv">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c5O-vc-HUN" kind="relationship" relationship="rootViewController" id="xFg-I5-vvB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37y-oX-FEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="462"/>
         </scene>
     </scenes>
 </document>

@@ -7,18 +7,8 @@
 //
 
 #import "CMAppDelegate.h"
-#import "CMLWeexOperationViewController.h"
 
 @implementation CMAppDelegate
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    CMLWeexOperationViewController *demoVC = [CMLWeexOperationViewController new];
-    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:demoVC];
-    self.window.rootViewController = nvc;
-    [self.window makeKeyAndVisible];
-    return YES;
-}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
