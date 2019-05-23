@@ -6,4 +6,5 @@ target 'Chameleon_Example' do
     #Chameleon
     pod 'DDChameleon', :path => '../'
     pod 'SVProgressHUD'
+    pod 'DoraemonKit/Core', '~> 1.1.8', :configurations => ['Debug']
 end

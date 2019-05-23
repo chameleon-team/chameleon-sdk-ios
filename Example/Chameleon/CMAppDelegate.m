@@ -7,8 +7,17 @@
 //
 
 #import "CMAppDelegate.h"
+#import <DoraemonKit/DoraemonManager.h>
 
 @implementation CMAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    [[DoraemonManager shareInstance] addH5DoorBlock:^(NSString *h5Url) {
+        
+    }];
+    [[DoraemonManager shareInstance] install];
+    return YES;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

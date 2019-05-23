@@ -1,0 +1,70 @@
+PODS:
+  - BSBacktraceLogger (0.0.1)
+  - DDChameleon (1.0.1):
+    - JSONModel
+    - Masonry
+    - SDWebImage
+    - SocketRocket
+    - SVProgressHUD
+    - WeexSDK (~> 0.19.0.2)
+  - DoraemonKit/Core (1.1.8):
+    - BSBacktraceLogger
+    - fishhook
+    - PNChart
+    - "UITextView+Placeholder"
+  - fishhook (0.2)
+  - JSONModel (1.8.0)
+  - Masonry (1.1.0)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - SDWebImage (5.0.2):
+    - SDWebImage/Core (= 5.0.2)
+  - SDWebImage/Core (5.0.2)
+  - SocketRocket (0.5.1)
+  - SVProgressHUD (2.2.5)
+  - UICountingLabel (1.2.0)
+  - "UITextView+Placeholder (1.2.1)"
+  - WeexSDK (0.19.0.2)
+
+DEPENDENCIES:
+  - DDChameleon (from `../`)
+  - DoraemonKit/Core (~> 1.1.8)
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BSBacktraceLogger
+    - DoraemonKit
+    - fishhook
+    - JSONModel
+    - Masonry
+    - PNChart
+    - SDWebImage
+    - SocketRocket
+    - SVProgressHUD
+    - UICountingLabel
+    - "UITextView+Placeholder"
+    - WeexSDK
+
+EXTERNAL SOURCES:
+  DDChameleon:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
+  DDChameleon: f2b56352f7c6aca8bc9c1e8843b83a4b9a3559db
+  DoraemonKit: 63d23b938b11ae2c04c8c2caba2112da7d5bda83
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  "UITextView+Placeholder": 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+  WeexSDK: 0515e386d0eae3400ed8e55f31f198ae35acce44
+
+PODFILE CHECKSUM: f4736bf2345833f79cc9b1938ae920ffdb0fa6a8
+
+COCOAPODS: 1.6.2
