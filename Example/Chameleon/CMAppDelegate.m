@@ -8,10 +8,13 @@
 
 #import "CMAppDelegate.h"
 #import <DoraemonKit/DoraemonManager.h>
+#import "DoraemonWeexLogDataSource.h"
 
 @implementation CMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    [DoraemonWeexLogDataSource shareInstance];
+    [[DoraemonManager shareInstance] addPluginWithTitle:@"日志" icon:@"doraemon_log" desc:@"Weex日志显示" pluginName:@"DoraemonWeexLogPlugin" atModule:@"CML专区"];
     [[DoraemonManager shareInstance] addH5DoorBlock:^(NSString *h5Url) {
         
     }];

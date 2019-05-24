@@ -39,7 +39,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="Zie-oa-Pxe"/>
                                 </constraints>
-                                <string key="text">http://jalon.wang/cml-demo-say/dist/web/cml-demo-say.html?cml_addr=http%3a%2f%2fjalon.wang%2fcml-demo-say%2fdist%2fweex%2fcml-demo-say_0c731e1c5e428213d27a.js</string>
+                                <string key="text">https://cmljs.org/cml-demo/dist/web/cml-demo.html?cml_addr=https%3A%2F%2Fcmljs.org%2Fcml-demo%2Fdist%2Fweex%2Fcml-demo.js#/pages/com/base/scroller/scroller</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                 <connections>

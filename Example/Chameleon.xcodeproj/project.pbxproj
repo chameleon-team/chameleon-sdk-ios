@@ -17,6 +17,14 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BEAA009122925DBB00D272E1 /* CMLWeexEntrancePage.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAA009022925DBB00D272E1 /* CMLWeexEntrancePage.m */; };
+		DA61555422969927003FF215 /* DoraemonWeexLogPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = DA61555322969927003FF215 /* DoraemonWeexLogPlugin.m */; };
+		DA61555722969964003FF215 /* DoraemonWeexLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA61555622969964003FF215 /* DoraemonWeexLogViewController.m */; };
+		DA61555A22969A49003FF215 /* DoraemonWeexLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA61555922969A49003FF215 /* DoraemonWeexLogModel.m */; };
+		DA61555D22969AA9003FF215 /* DoraemonWeexLogSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA61555C22969AA9003FF215 /* DoraemonWeexLogSearchView.m */; };
+		DA61556022969B3B003FF215 /* DoraemonWeexLogLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA61555F22969B3B003FF215 /* DoraemonWeexLogLevelView.m */; };
+		DA61556322969BB0003FF215 /* DoraemonWeexLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA61556222969BB0003FF215 /* DoraemonWeexLogCell.m */; };
+		DA61556722969D7E003FF215 /* DoraemonWeexLogDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DA61556622969D7E003FF215 /* DoraemonWeexLogDataSource.m */; };
+		DA61556A2296B671003FF215 /* DoraemonWeexLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6155692296B671003FF215 /* DoraemonWeexLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,22 @@
 		9DE126E9BB1302510A381845 /* Pods-Chameleon_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chameleon_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chameleon_Example/Pods-Chameleon_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BE64441D22925D1C00F4107A /* CMLWeexEntrancePage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMLWeexEntrancePage.h; sourceTree = "<group>"; };
 		BEAA009022925DBB00D272E1 /* CMLWeexEntrancePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMLWeexEntrancePage.m; sourceTree = "<group>"; };
+		DA61555222969927003FF215 /* DoraemonWeexLogPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoraemonWeexLogPlugin.h; sourceTree = "<group>"; };
+		DA61555322969927003FF215 /* DoraemonWeexLogPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoraemonWeexLogPlugin.m; sourceTree = "<group>"; };
+		DA61555522969964003FF215 /* DoraemonWeexLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoraemonWeexLogViewController.h; sourceTree = "<group>"; };
+		DA61555622969964003FF215 /* DoraemonWeexLogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoraemonWeexLogViewController.m; sourceTree = "<group>"; };
+		DA61555822969A49003FF215 /* DoraemonWeexLogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoraemonWeexLogModel.h; sourceTree = "<group>"; };
+		DA61555922969A49003FF215 /* DoraemonWeexLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoraemonWeexLogModel.m; sourceTree = "<group>"; };
+		DA61555B22969AA9003FF215 /* DoraemonWeexLogSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoraemonWeexLogSearchView.h; sourceTree = "<group>"; };
+		DA61555C22969AA9003FF215 /* DoraemonWeexLogSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoraemonWeexLogSearchView.m; sourceTree = "<group>"; };
+		DA61555E22969B3B003FF215 /* DoraemonWeexLogLevelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoraemonWeexLogLevelView.h; sourceTree = "<group>"; };
+		DA61555F22969B3B003FF215 /* DoraemonWeexLogLevelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoraemonWeexLogLevelView.m; sourceTree = "<group>"; };
+		DA61556122969BB0003FF215 /* DoraemonWeexLogCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoraemonWeexLogCell.h; sourceTree = "<group>"; };
+		DA61556222969BB0003FF215 /* DoraemonWeexLogCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoraemonWeexLogCell.m; sourceTree = "<group>"; };
+		DA61556522969D7E003FF215 /* DoraemonWeexLogDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoraemonWeexLogDataSource.h; sourceTree = "<group>"; };
+		DA61556622969D7E003FF215 /* DoraemonWeexLogDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoraemonWeexLogDataSource.m; sourceTree = "<group>"; };
+		DA6155682296B671003FF215 /* DoraemonWeexLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoraemonWeexLogger.h; sourceTree = "<group>"; };
+		DA6155692296B671003FF215 /* DoraemonWeexLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoraemonWeexLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +112,7 @@
 		6003F593195388D20070C39A /* Example for Chameleon */ = {
 			isa = PBXGroup;
 			children = (
+				DA61554E22969825003FF215 /* Debug */,
 				BEC5940A228D8CC000E93083 /* demo */,
 				6003F59C195388D20070C39A /* CMAppDelegate.h */,
 				6003F59D195388D20070C39A /* CMAppDelegate.m */,
@@ -118,6 +143,61 @@
 				BEAA009022925DBB00D272E1 /* CMLWeexEntrancePage.m */,
 			);
 			path = demo;
+			sourceTree = "<group>";
+		};
+		DA61554E22969825003FF215 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				DA61554F229698B2003FF215 /* Log */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		DA61554F229698B2003FF215 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				DA61556422969D60003FF215 /* Function */,
+				DA615551229698E5003FF215 /* View */,
+				DA615550229698DA003FF215 /* Model */,
+				DA61555222969927003FF215 /* DoraemonWeexLogPlugin.h */,
+				DA61555322969927003FF215 /* DoraemonWeexLogPlugin.m */,
+				DA61555522969964003FF215 /* DoraemonWeexLogViewController.h */,
+				DA61555622969964003FF215 /* DoraemonWeexLogViewController.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		DA615550229698DA003FF215 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA61555822969A49003FF215 /* DoraemonWeexLogModel.h */,
+				DA61555922969A49003FF215 /* DoraemonWeexLogModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA615551229698E5003FF215 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA61555B22969AA9003FF215 /* DoraemonWeexLogSearchView.h */,
+				DA61555C22969AA9003FF215 /* DoraemonWeexLogSearchView.m */,
+				DA61555E22969B3B003FF215 /* DoraemonWeexLogLevelView.h */,
+				DA61555F22969B3B003FF215 /* DoraemonWeexLogLevelView.m */,
+				DA61556122969BB0003FF215 /* DoraemonWeexLogCell.h */,
+				DA61556222969BB0003FF215 /* DoraemonWeexLogCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA61556422969D60003FF215 /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				DA61556522969D7E003FF215 /* DoraemonWeexLogDataSource.h */,
+				DA61556622969D7E003FF215 /* DoraemonWeexLogDataSource.m */,
+				DA6155682296B671003FF215 /* DoraemonWeexLogger.h */,
+				DA6155692296B671003FF215 /* DoraemonWeexLogger.m */,
+			);
+			path = Function;
 			sourceTree = "<group>";
 		};
 		F48BE482F7E029F5D0330E3D /* Pods */ = {
@@ -264,9 +344,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA61556022969B3B003FF215 /* DoraemonWeexLogLevelView.m in Sources */,
 				6003F59E195388D20070C39A /* CMAppDelegate.m in Sources */,
+				DA61556322969BB0003FF215 /* DoraemonWeexLogCell.m in Sources */,
+				DA61555D22969AA9003FF215 /* DoraemonWeexLogSearchView.m in Sources */,
+				DA61555422969927003FF215 /* DoraemonWeexLogPlugin.m in Sources */,
+				DA61555722969964003FF215 /* DoraemonWeexLogViewController.m in Sources */,
+				DA61556A2296B671003FF215 /* DoraemonWeexLogger.m in Sources */,
 				BEAA009122925DBB00D272E1 /* CMLWeexEntrancePage.m in Sources */,
+				DA61555A22969A49003FF215 /* DoraemonWeexLogModel.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				DA61556722969D7E003FF215 /* DoraemonWeexLogDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
