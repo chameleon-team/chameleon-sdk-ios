@@ -6,4 +6,11 @@ target 'Chameleon_Example' do
     #Chameleon
     pod 'DDChameleon', :path => '../'
     pod 'SVProgressHUD'
+    
+    # 接入DoKit需要引入的仓库
+    pod 'DoraemonKit/Core', '~> 1.2.0', :configurations => ['Debug']
+    pod 'DoraemonKit/WithWeex', '~> 1.2.0', :configurations => ['Debug']
+    
+    # WXDevtool需要配合WeexSDK的版本
+    pod  'WXDevtool', '0.17.0', :configurations => ['Debug']
 end

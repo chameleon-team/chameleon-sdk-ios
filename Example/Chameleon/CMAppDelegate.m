@@ -7,8 +7,21 @@
 //
 
 #import "CMAppDelegate.h"
+#ifdef DEBUG
+#import <DoraemonKit/DoraemonManager.h>
+#endif
+
 
 @implementation CMAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    #ifdef DEBUG
+    //DoKit初始化
+    [[DoraemonManager shareInstance] install];
+    #endif
+    return YES;
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
