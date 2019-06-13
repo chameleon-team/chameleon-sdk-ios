@@ -27,11 +27,14 @@ Pod::Spec.new do |s|
         'DDChameleon' => ['Pod/res/*']
     }
 
+    s.dependency 'WeexSDK', '0.24.0'
+
     s.dependency 'JSONModel'
     s.dependency 'Masonry'
-    s.dependency 'WeexSDK', '~> 0.19.0.2'
     s.dependency 'SocketRocket'
     s.dependency 'SDWebImage'
     s.dependency 'SVProgressHUD'
+    s.dependency 'WeexGcanvas'
+    s.dependency 'WeexPluginLoader'
 
 end
