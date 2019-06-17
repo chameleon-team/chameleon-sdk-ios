@@ -12,5 +12,5 @@ target 'Chameleon_Example' do
     pod 'DoraemonKit/WithWeex', '~> 1.2.0', :configurations => ['Debug']
     
     # WXDevtool需要配合WeexSDK的版本
-    pod  'WXDevtool', '0.17.0', :configurations => ['Debug']
+    pod  'WXDevtool', '0.24.0', :configurations => ['Debug']
 end

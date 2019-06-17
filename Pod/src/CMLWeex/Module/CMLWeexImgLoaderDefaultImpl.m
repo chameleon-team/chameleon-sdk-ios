@@ -12,7 +12,6 @@
 #import "SDWebImageManager.h"
 #endif
 
-
 @implementation CMLWeexImgLoaderDefaultImpl
 
 - (id<WXImageOperationProtocol>)downloadImageWithURL:(NSString *)url imageFrame:(CGRect)imageFrame userInfo:(NSDictionary *)userInfo completed:(void(^)(UIImage *image,  NSError *error, BOOL finished))completedBlock
@@ -22,13 +21,17 @@
     }
     
 #if __has_include("SocketRocket.h")
-    return (id<WXImageOperationProtocol>)[[SDWebImageManager sharedManager]loadImageWithURL:[NSURL URLWithString:url] options:0 progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
+    return (id<WXImageOperationProtocol>) [[SDWebImageManager sharedManager].imageDownloader downloadImageWithURL:[NSURL URLWithString:url] options:0 progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
         if (completedBlock) {
             completedBlock(image, error, finished);
         }
     }];
+//    return (id<WXImageOperationProtocol>)[[SDWebImageManager sharedManager]downloadImageWithURL:[NSURL URLWithString:url] options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+//        if (completedBlock) {
+//            completedBlock(image, error, finished);
+//        }
+//    }];
 #endif
-    
     return nil;
 }
 

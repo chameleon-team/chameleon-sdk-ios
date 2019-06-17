@@ -32,9 +32,10 @@ Pod::Spec.new do |s|
     s.dependency 'JSONModel'
     s.dependency 'Masonry'
     s.dependency 'SocketRocket'
-    s.dependency 'SDWebImage'
+    s.dependency 'SDWebImage', '4.4.6'
     s.dependency 'SVProgressHUD'
     s.dependency 'WeexGcanvas'
     s.dependency 'WeexPluginLoader'
 
+    
 end
