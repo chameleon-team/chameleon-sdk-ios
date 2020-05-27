@@ -9,6 +9,7 @@
 
 @interface CMLEnvironmentManage ()
 
+
 @end
 
 @implementation CMLEnvironmentManage
@@ -39,8 +40,12 @@
 
 #pragma mark - getter/setter
 - (void)setServiceType:(enum CMLServiceType)serviceType {
-    if(serviceType & CMLServiceTypeWeex) {
+    if(serviceType & CMLServiceTypeWeex){
         _weexService = [[CMLWeexService alloc] init];
+    }
+    
+    if(serviceType & CMLServiceTypeReactNative){
+        _ReactNativeService = [[CMLReactNativeService alloc] init];
     }
 }
 

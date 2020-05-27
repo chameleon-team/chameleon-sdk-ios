@@ -48,4 +48,7 @@ return NSStringFromSelector(method); \
 
 #define CML_IPHONE_PUSH_STATUSBAR_HEIGHT (IS_IPHONE_X ? 44 : 0)
 
+
+#define CMLPageAndPageCommunication @"CMLPageCommunication"
+
 #endif /* CMLConstants_h */

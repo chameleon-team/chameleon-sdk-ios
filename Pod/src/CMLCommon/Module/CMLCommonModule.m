@@ -46,6 +46,9 @@ CML_EXPORT_METHOD(@selector(reloadPage:callBack:))
 CML_EXPORT_METHOD(@selector(rollbackWeb:callBack:))
 CML_EXPORT_METHOD(@selector(canIUse:callBack:))
 
+CML_EXPORT_METHOD(@selector(broadcast:callBack:))
+
+
 
 - (void)getSDKInfo:(CMLMoudleCallBack)callback
 {
@@ -490,6 +493,12 @@ CML_EXPORT_METHOD(@selector(canIUse:callBack:))
     }];
     //系统会一直更新数据，直到选择停止更新，因为我们只需要获得一次经纬度即可，所以获取之后就停止更新
     [manager stopUpdatingLocation];
+    
+}
+
+- (void)broadcast:(NSDictionary *)parms callBack:(CMLMoudleCallBack)callback{
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:CMLPageAndPageCommunication object:parms];
     
 }
 

@@ -8,6 +8,8 @@
 
 #import "CMLSDKEngine.h"
 #import "CMLModuleManager.h"
+#import "WXSDKEngine.h"
+#import "CMLRichTextComponent.h"
 
 @implementation CMLSDKEngine
 
@@ -18,7 +20,9 @@
     [CMLSDKEngine registerModule:@"storage" className:@"CMLStorageModule"];
     [CMLSDKEngine registerModule:@"clipboard" className:@"CMLClipboardModule"];
     [CMLSDKEngine registerModule:@"stream" className:@"CMLStreamModule"];
+    [CMLSDKEngine registerModule:@"audio" className:@"CMLAudioModule"];
     [CMLSDKEngine registerModule:@"webSocket" className:@"CMLWebSocketModule"];
+    [WXSDKEngine registerComponent:@"richtext" withClass:[CMLRichTextComponent class]];
 }
 
 + (void)registerModule:(NSString *)moduleName className:(NSString *)className

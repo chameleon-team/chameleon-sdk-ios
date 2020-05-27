@@ -10,6 +10,7 @@
 #import "CMLReachability.h"
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import "CMLConstants.h"
 
 UIViewController *CMLRootViewController()
 {
@@ -82,6 +83,8 @@ NSString *_CMLBase64DataEncode(NSData *input)
     [extraParams setObject:[CMLUtility uuidString] forKey:@"imei"];
     [extraParams setObject:[CMLUtility registeredDeviceName] forKey:@"model"];
     [extraParams setObject:[CMLUtility getNetconnType] forKey:@"netType"];
+    [extraParams setObject:@(CML_IPHONE_STATUSBAR_HEIGHT * scale) forKey:@"statusbarHeight"];
+    [extraParams setObject:@(deviceHeight * scale) forKey:@"viewHeight"];
    
     [data setObject:extraParams forKey:@"extraParams"];
 

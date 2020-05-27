@@ -36,6 +36,7 @@ typedef NS_ENUM(NSInteger, CMLCurrentRunEnvironment){
 @property (nonatomic, strong, readonly) CMLWKWebView *webPage;
 
 @property (nonatomic, strong) CMLNavigationBar *navigationBar;
+@property (nonatomic, assign) BOOL hideNavigationBar;//默认显示
 
 @property (nonatomic, strong) CMLModuleBridge *bridge;
 

@@ -217,18 +217,17 @@
 }
 
 #pragma mark - cache tool methods
-
-- (CMLCacheItem *)getCacheItemWithUrl:(NSString *)url
-{
+- (CMLCacheItem *)getCacheItemWithUrl:(NSString *)url {
     NSString *identifier = [url CM_MD5];
     CMLCacheItem *info = [self.cacheInfo getCacheInfo:identifier];
     return info;
 }
 
+
 //根据URL和data，获取到jsBundleName和内容对应的缓存键值对
 //例：@"https://www.example.com/nodejs_v5/a.js" = @"balabala...."
-- (NSDictionary *)jsBundleDataDictFromHtmlData:(NSData *)data url:(NSString *)url
-{
+
+- (NSDictionary *)jsBundleDataDictFromHtmlData:(NSData *)data url:(NSString *)url{
     NSMutableDictionary *jsBundleDataDict = [NSMutableDictionary new];
     NSString *separateStr = @"/??/";
     NSString *noQueryPath = nil;
@@ -272,8 +271,7 @@
 }
 
 //获取本地缓存去重后，URL中的jsBundle部分数组
-- (NSArray *)newComponentsAfterRemoveDuplicateJsBundleWithOriginUrl:(NSString *)url
-{
+- (NSArray *)newComponentsAfterRemoveDuplicateJsBundleWithOriginUrl:(NSString *)url{
     NSString *noQueryPath = nil;
     NSString *separateStr = @"/??/";
     
@@ -304,8 +302,7 @@
 //https://www.example.com/v5/??/nodejs_v5/common.js,/nodejs_v5/a.js,/nodejs_v5/b.js
 //输出：
 //[nodejs_v5/common.js, nodejs_v5/a.js, nodejs_v5/b.js]
-- (NSArray *)jsBundleNameArrayFromUrlString:(NSString *)url
-{
+- (NSArray *)jsBundleNameArrayFromUrlString:(NSString *)url {
     NSString *separateStr = @"/??/";
     NSRange range = [url rangeOfString:separateStr];
     if(range.location != NSNotFound){
@@ -322,8 +319,7 @@
 //https://www.example.com/v5/??/nodejs_v5/common.js,/nodejs_v5/a.js,/nodejs_v5/b.js
 //输出：
 //[https://www.example.com/v5/nodejs_v5/common.js, https://www.example.com/v5/nodejs_v5/a.js, https://integ-wise.example.com/v5/nodejs_v5/b.js]
-- (NSArray *)jsBundleKeyNameArrayFromUrlString:(NSString *)url
-{
+- (NSArray *)jsBundleKeyNameArrayFromUrlString:(NSString *)url {
     NSString *separateStr = @"/??/";
     NSRange range = [url rangeOfString:separateStr];
     if(range.location != NSNotFound){
@@ -339,5 +335,6 @@
         return nil;
     }
 }
+
 
 @end

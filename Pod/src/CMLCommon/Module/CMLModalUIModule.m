@@ -6,9 +6,13 @@
 //
 
 #import "CMLModalUIModule.h"
+#import "CMLWeexRenderPage.h"
 #import "CMLUtility.h"
 #import "CMLConstants.h"
 #import "UIView+Toast.h"
+#if __has_include("MBProgressHUD.h")
+#import "MBProgressHUD.h"
+#endif
 
 @implementation CMLModalUIModule
 @synthesize cmlInstance;
@@ -16,6 +20,9 @@
 CML_EXPORT_METHOD(@selector(showToast:callBack:))
 CML_EXPORT_METHOD(@selector(alert:callBack:))
 CML_EXPORT_METHOD(@selector(confirm:callBack:))
+
+CML_EXPORT_METHOD(@selector(showLoading:callBack:))
+CML_EXPORT_METHOD(@selector(hideLoading:callBack:))
 
 
 - (void)showToast:(NSDictionary *)param callBack:(CMLMoudleCallBack)callback {
@@ -99,5 +106,51 @@ CML_EXPORT_METHOD(@selector(confirm:callBack:))
     [CMLRootViewController() presentViewController:alertController animated:YES completion:nil];
     
 }
+
+- (void)showLoading:(NSDictionary *)param callBack:(CMLMoudleCallBack)callback {
+    
+#if __has_include("MBProgressHUD.h")
+    id viewController = self.cmlInstance.viewController;
+    UIView *showView = nil;
+    if (viewController && [viewController isKindOfClass:[CMLWeexRenderPage class]]) {
+        showView = ((UIViewController *)viewController).view;
+    }
+    if (!showView) {
+        showView = CMLRootViewController().view;
+    }
+    [UIActivityIndicatorView appearanceWhenContainedInInstancesOfClasses:@[[MBProgressHUD class]]].color = [UIColor whiteColor];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:showView animated:YES];
+    hud.bezelView.backgroundColor = [UIColor blackColor];
+    hud.label.textColor = [UIColor whiteColor];
+    NSString *title = param[@"title"];
+    if (title && title.length > 0) {
+        hud.label.text = title;
+    }
+    BOOL dimBackground = [param[@"mask"] boolValue];
+    hud.backgroundView.style = MBProgressHUDBackgroundStyleSolidColor;
+    hud.backgroundView.color = dimBackground ? [UIColor colorWithWhite:0.f alpha:.2f] : [UIColor clearColor];
+    
+#endif
+
+}
+
+- (void)hideLoading:(NSDictionary *)param callBack:(CMLMoudleCallBack)callback {
+    
+#if __has_include("MBProgressHUD.h")
+    id viewController = self.cmlInstance.viewController;
+    UIView *showView = nil;
+    if (viewController && [viewController isKindOfClass:[CMLWeexRenderPage class]]) {
+        showView = ((UIViewController *)viewController).view;
+    }
+    if (!showView) {
+        showView = CMLRootViewController().view;
+    }
+    [MBProgressHUD hideHUDForView:showView animated:YES];
+    
+#endif
+   
+}
+
+
 
 @end

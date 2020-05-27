@@ -7,10 +7,10 @@
 //
 
 #import "CMLWeexImgLoaderDefaultImpl.h"
-
 #if __has_include("SocketRocket.h")
 #import "SDWebImageManager.h"
 #endif
+
 
 @implementation CMLWeexImgLoaderDefaultImpl
 
@@ -19,18 +19,13 @@
     if ([url hasPrefix:@"//"]) {
         url = [@"https:" stringByAppendingString:url];
     }
-    
 #if __has_include("SocketRocket.h")
-    return (id<WXImageOperationProtocol>) [[SDWebImageManager sharedManager].imageDownloader downloadImageWithURL:[NSURL URLWithString:url] options:0 progress:nil completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
+    return (id<WXImageOperationProtocol>)[[SDWebImageManager sharedManager] downloadImageWithURL:[NSURL URLWithString:url] options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
         if (completedBlock) {
             completedBlock(image, error, finished);
         }
     }];
-//    return (id<WXImageOperationProtocol>)[[SDWebImageManager sharedManager]downloadImageWithURL:[NSURL URLWithString:url] options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
-//        if (completedBlock) {
-//            completedBlock(image, error, finished);
-//        }
-//    }];
 #endif
     return nil;
 }

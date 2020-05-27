@@ -47,7 +47,9 @@
     id <CMLModuleProtocol>instance = _mInstances[clsName];
     if(!instance){
         instance = [[clazz alloc] init];
-        instance.cmlInstance = [[CMLInstanceManager sharedManager] instanceForIdentifier:instanceId];
+        if ([clazz conformsToProtocol:@protocol(CMLModuleProtocol)]) {
+            instance.cmlInstance = [[CMLInstanceManager sharedManager] instanceForIdentifier:instanceId];
+        }
         _mInstances[clsName] = instance;
     }
     return instance;

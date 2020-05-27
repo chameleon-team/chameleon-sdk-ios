@@ -84,8 +84,8 @@ CML_EXPORT_METHOD(@selector(close:callBack:))
 
     if (!_webSocket) {
         _webSocket = [WXWebSocketModule new];
+        
         __weak typeof(self) weakSelf = self;
-
         [self callWebSocketMethodName:@"onopen:" callBack:^(id result, BOOL keepAlive) {
            
             id viewController = weakSelf.cmlInstance.viewController;

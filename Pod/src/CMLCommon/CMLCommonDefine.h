@@ -31,9 +31,8 @@ typedef NS_ENUM(NSInteger, CMLRenderFailerType){
     CMLRenderFailerDefaultErrWeb, //默认错误web页加载失败 10
 };
 
+
 #define CML_COMMON_CACHE_PATH ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"Chameleon"])
 
-#define DDChameleonBundle ([NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"DDChameleon" ofType:@"bundle"]])
-#define DDChameleonImage(ImageName) ([UIImage imageNamed:ImageName inBundle:DDChameleonBundle compatibleWithTraitCollection:nil])
 
 #endif /* CMLCommonDefine_h */

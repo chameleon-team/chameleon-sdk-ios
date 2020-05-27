@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param kind 缓存的类型。
  @param completion 成功或者失败的回调。
  */
-- (void)addJSBundleCache:(NSData *)data originUrl:(NSString *)originUrl kind:(CMLChameleonCacheKind)kind completion:(void(^ _Nullable)(BOOL success))completion;
+- (void)addJSBundleCache:(NSData *)data originUrl:(NSString *)originUrl kind:(CMLChameleonCacheKind)kind completion:(void(^)(BOOL success))completion;
 
 @end
 

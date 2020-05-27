@@ -12,6 +12,7 @@
 #if __has_include("WXStreamModule.h")
 #import "WXStreamModule.h"
 #endif
+#import "NSString+CMLExtends.h"
 
 @interface CMLStreamModule ()
 
@@ -51,16 +52,19 @@ CML_EXPORT_METHOD(@selector(fetch:callback:progressCallback:))
         
         [self.streamModule fetch:options callback:^(id result, BOOL keepAlive) {
             
-            NSDictionary *cmlResult = @{@"errno": @"0", @"data":_CMLJSONStringWithObject(result)?:@"", @"msg": @""};
+            NSString *dataStr = _CMLJSONStringWithObject(result);
+            dataStr = dataStr?[dataStr CM_urlEncode]:@"";
+            
+            NSDictionary *cmlResult = @{@"errno": @"0", @"data":dataStr, @"msg": @""};
             if (callback) {
                 callback(cmlResult);
             }
         } progressCallback:^(id result, BOOL keepAlive) {
             
-            NSDictionary *cmlResult = @{@"errno": @"0", @"data":_CMLJSONStringWithObject(result)?:@"", @"msg": @""};
-            if (callback) {
-                progressCallback(cmlResult);
-            }
+//            NSDictionary *cmlResult = @{@"errno": @"0", @"data":_CMLJSONStringWithObject(result)?:@"", @"msg": @""};
+//            if (callback) {
+//                progressCallback(cmlResult);
+//            }
         }];
     }
 }

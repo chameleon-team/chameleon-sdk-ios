@@ -7,9 +7,11 @@
 
 #import <Foundation/Foundation.h>
 #import "CMLWeexService.h"
+#import "CMLReactNativeService.h"
 
 typedef NS_ENUM(NSInteger, CMLServiceType){
     CMLServiceTypeWeex = 1,
+    CMLServiceTypeReactNative = 1 << 1
 };
 
 @interface CMLEnvironmentManage : NSObject
@@ -23,6 +25,12 @@ typedef NS_ENUM(NSInteger, CMLServiceType){
  weex服务实例
  */
 @property (nonatomic, strong) CMLWeexService *weexService;
+
+/**
+ ReactNative服务实例
+ */
+@property (nonatomic, strong) CMLReactNativeService *ReactNativeService;
+
 
 + (instancetype)chameleon;
 
