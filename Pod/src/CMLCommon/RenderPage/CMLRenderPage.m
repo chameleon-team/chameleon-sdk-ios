@@ -241,7 +241,7 @@
         [self.view addSubview:self.navigationBar];
        
         _webPage = [[CMLWKWebView alloc] initWithUrl:htmlUrl parms:self.parameter];
-        _webPage.backgroundColor = [UIColor lightGrayColor];
+        _webPage.backgroundColor = [UIColor clearColor];
         _webPage.viewController = self;
         _webPage.delegate = self;
         [self.view addSubview:_webPage];
@@ -257,7 +257,7 @@
         if (_hideNavigationBar) {
             topCoverView.frame = CGRectMake(0, 0, CMLScreenWidth, 0);
         }
-        topCoverView.backgroundColor = [UIColor lightGrayColor];
+        topCoverView.backgroundColor = [UIColor clearColor];
         [self.view addSubview:topCoverView];
         _navigationBar = [CMLNavigationBar defaultNavigationBarWithTitle:@"chameleon"];
         _navigationBar.frame = CGRectMake(0, CML_IPHONE_STATUSBAR_HEIGHT-20, CMLScreenWidth, CML_IPHONE_NAVIGATIONBAR_HEIGHT);
