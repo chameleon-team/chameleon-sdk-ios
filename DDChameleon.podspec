@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'DDChameleon'
-    s.version          = '1.0.2'
+    s.version          = '1.0.3'
     s.ios.deployment_target = '9.0'
     
     s.summary          = '🦎 一套代码运行多端，一端所见即多端所见'
