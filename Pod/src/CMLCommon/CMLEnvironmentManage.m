@@ -44,9 +44,9 @@
         _weexService = [[CMLWeexService alloc] init];
     }
     
-    if(serviceType & CMLServiceTypeReactNative){
-        _ReactNativeService = [[CMLReactNativeService alloc] init];
-    }
+//    if(serviceType & CMLServiceTypeReactNative){
+//        _ReactNativeService = [[CMLReactNativeService alloc] init];
+//    }
 }
 
 @end
