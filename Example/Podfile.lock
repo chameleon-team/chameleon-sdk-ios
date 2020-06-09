@@ -1,0 +1,87 @@
+PODS:
+  - BSBacktraceLogger (0.0.1)
+  - DDChameleon (1.0.3):
+    - JSONModel
+    - Masonry
+    - SDWebImage (= 4.4.6)
+    - SocketRocket
+    - SVProgressHUD
+    - WeexGcanvas
+    - WeexPluginLoader
+    - WeexSDK (= 0.24.0)
+  - DoraemonKit/Core (1.2.4):
+    - BSBacktraceLogger
+    - fishhook
+  - DoraemonKit/WithWeex (1.2.4):
+    - BSBacktraceLogger
+    - DoraemonKit/Core
+    - fishhook
+    - WeexSDK
+    - WXDevtool
+  - fishhook (0.2)
+  - GCanvas (1.1.1)
+  - JSONModel (1.8.0)
+  - Masonry (1.1.0)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - SocketRocket (0.5.1)
+  - SVProgressHUD (2.2.5)
+  - WeexGcanvas (1.1.0):
+    - GCanvas
+    - SDWebImage
+    - WeexPluginLoader
+    - WeexSDK
+  - WeexPluginLoader (0.0.1.9.1):
+    - WeexSDK
+  - WeexSDK (0.24.0)
+  - WXDevtool (0.24.0):
+    - SocketRocket
+    - WeexSDK
+
+DEPENDENCIES:
+  - DDChameleon (from `../`)
+  - DoraemonKit/Core (~> 1.2.0)
+  - DoraemonKit/WithWeex (~> 1.2.0)
+  - SVProgressHUD
+  - WXDevtool (= 0.24.0)
+
+SPEC REPOS:
+  trunk:
+    - BSBacktraceLogger
+    - DoraemonKit
+    - fishhook
+    - GCanvas
+    - JSONModel
+    - Masonry
+    - SDWebImage
+    - SocketRocket
+    - SVProgressHUD
+    - WeexGcanvas
+    - WeexPluginLoader
+    - WeexSDK
+    - WXDevtool
+
+EXTERNAL SOURCES:
+  DDChameleon:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
+  DDChameleon: ac400c5124288e22a9c04ca17e0ac4f0ec9f1c0f
+  DoraemonKit: 5328b8b57cd900f6a24f7f66051346dd4409437d
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  GCanvas: 48279b84f74a24c8c41fedc8ca19885ef3f4a8d9
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  WeexGcanvas: b10a20f718ae66fee72dc1d896e5cc0e64a397e4
+  WeexPluginLoader: 85c1304f8ba29864e58531614a0acfeceef1b85c
+  WeexSDK: 5bd35be9c035c67c84d1ba15712360bb0d0ba6b5
+  WXDevtool: 95b70c73c06fc3299d65bd53ba4b3e0b0087f3cb
+
+PODFILE CHECKSUM: ebbd0938eb39d5a170714650ee4c2e7ceaf73638
+
+COCOAPODS: 1.8.4

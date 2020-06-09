@@ -204,8 +204,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Chameleon_Example/Pods-Chameleon_Example-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/DDChameleon/DDChameleon.bundle",
@@ -218,8 +216,6 @@
 				"${PODS_ROOT}/WeexSDK/ios/sdk/WeexSDK/Resources/wx_load_error@3x.png",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DDChameleon.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DoraemonKit.bundle",
