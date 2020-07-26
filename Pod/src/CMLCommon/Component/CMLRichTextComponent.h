@@ -8,7 +8,7 @@
 
 #import "WXComponent.h"
 
-@interface CMLRichTextComponent : WXComponent
+@interface CMLRichTextComponent : WXComponent 
 
 @end
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'DDChameleon'
-    s.version          = '1.0.3.1'
+    s.version          = '1.0.3.2'
     s.ios.deployment_target = '9.0'
     
     s.summary          = '🦎 一套代码运行多端，一端所见即多端所见'
@@ -36,6 +36,7 @@ Pod::Spec.new do |s|
     s.dependency 'SVProgressHUD'
     s.dependency 'WeexGcanvas'
     s.dependency 'WeexPluginLoader'
+    s.dependency 'TTTAttributedLabel'
 
     
 end
