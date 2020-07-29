@@ -13,4 +13,6 @@ target 'Chameleon_Example' do
     
     # WXDevtool需要配合WeexSDK的版本
     pod  'WXDevtool', '0.24.0', :configurations => ['Debug']
+    # weex官方0.28.0版本未解决webView问题，需直接在此引用master
+    pod 'WeexSDK' , :git => 'https://github.com/apache/incubator-weex.git'
 end
