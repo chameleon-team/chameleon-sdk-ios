@@ -13,6 +13,9 @@
 #import "NSDictionary+CMLExtends.h"
 #import "NSArray+CMLExtends.h"
 #import "UIColor+CMLExtends.h"
+#import "CMLWeexRenderPage.h"
+#import "CMLEnvironmentManage.h"
+#import "CMLUtility.h"
 
 @implementation TTTAttributedLabel (DCWeex)
 
@@ -77,13 +80,15 @@
                 //            [self addLinkWithTextCheckingResult:result];
                 __weak typeof(self) weakSelf = self;
                 [link setLinkTapBlock:^(TTTAttributedLabel *oneLabel, TTTAttributedLabelLink *oneLink) {
-
-                    NSDictionary *attrDict = oneLink.inactiveAttributes;
-                    NSString *click = [attrDict valueForKey:@"click"];
                     if(click.intValue == 1){
                         [weakSelf.delegate attributedLabel:oneLabel didSelectLinkWithAddress:oneLink.inactiveAttributes];
                     } else {
-//                        [[DCURLSchemeMgr sharedInstance] callInsideURL:oneLink.result.URL];
+                        //直接跳转
+                        CMLWeexRenderPage *weexDemo = [[CMLWeexRenderPage alloc] initWithLoadUrl:oneLink.result.URL.absoluteString];
+                        weexDemo.service = [CMLEnvironmentManage chameleon].weexService;
+                        if ([CMLRootViewController() isKindOfClass:[UINavigationController class]]) {
+                             [(UINavigationController *)CMLRootViewController() pushViewController:weexDemo animated:YES];
+                        }
                     }
                 }];
                 [self addLink:link];
