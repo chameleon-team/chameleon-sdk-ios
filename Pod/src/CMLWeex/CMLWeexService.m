@@ -9,6 +9,7 @@
 #import "CMLWeexService.h"
 #import "CMLWeexBridgeModule.h"
 #import "CMLWeexImgLoaderDefaultImpl.h"
+#import "CMLRichTextComponent.h"
 #import "WeexSDK.h"
 #if __has_include("SocketRocket.h")
 #import "CMLWeeXWebSocketDefaultImpl.h"
@@ -68,7 +69,8 @@
 {
     
     [WXSDKEngine registerModule:@"cmlBridge" withClass:[CMLWeexBridgeModule class]];
-    
+    [WXSDKEngine registerComponent:@"richtext" withClass:[CMLRichTextComponent class]];
+
     [WXSDKEngine registerHandler:[CMLWeexImgLoaderDefaultImpl new] withProtocol:@protocol(WXImgLoaderProtocol)];
 #if __has_include("SocketRocket.h")
         [WXSDKEngine registerHandler:[CMLWeeXWebSocketDefaultImpl new] withProtocol:@protocol(WXWebSocketHandler)];

@@ -162,7 +162,7 @@
 				ORGANIZATIONNAME = "Chameleon-Team";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 4HW3B6PMKD;
+						DevelopmentTeam = 46YE22D245;
 					};
 				};
 			};
@@ -394,7 +394,8 @@
 			baseConfigurationReference = 9DE126E9BB1302510A381845 /* Pods-Chameleon_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4HW3B6PMKD;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 46YE22D245;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chameleon/Chameleon-Prefix.pch";
 				INFOPLIST_FILE = "Chameleon/Chameleon-Info.plist";
@@ -410,7 +411,8 @@
 			baseConfigurationReference = 04BFCE4083C3F46326A4F600 /* Pods-Chameleon_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4HW3B6PMKD;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 46YE22D245;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Chameleon/Chameleon-Prefix.pch";
 				INFOPLIST_FILE = "Chameleon/Chameleon-Info.plist";

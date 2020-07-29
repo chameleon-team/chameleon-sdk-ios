@@ -38,7 +38,7 @@
             label.font = [UIFont systemFontOfSize:14];
             [label setDCNoteInfo:noteModel];
             CGSize size = [label sizeThatFits:CGSizeMake(label.frame.size.width, CGFLOAT_MAX)];
-            label.frame = CGRectMake(label.frame.origin.x, label.frame.origin.y, label.frame.size.width, label.frame.size.height);
+            label.frame = CGRectMake(label.frame.origin.x, label.frame.origin.y, size.width, size.height);
             if([noteModel.text_align isEqualToString:@"left"]){
                 label.textAlignment = NSTextAlignmentLeft;
             }
@@ -49,7 +49,7 @@
                 label.textAlignment = NSTextAlignmentCenter;
             }
             
-            [self fireEvent:@"layoutRichText" params:@{@"height":[NSString stringWithFormat:@"%f",label.frame.size.height]} domChanges:nil];
+            [self fireEvent:@"layoutRichText" params:@{@"height":[NSString stringWithFormat:@"%f",size.height]} domChanges:nil];
             //            NSMutableDictionary *stylesDict = [NSMutableDictionary new];
             //            [stylesDict one_setFloat:label1.size.height*2 forKey:@"height"];
             //            [stylesDict one_setFloat:label1.size.width*2 forKey:@"width"];

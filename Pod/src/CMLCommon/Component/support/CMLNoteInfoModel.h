@@ -9,7 +9,7 @@
 #import "JSONModel.h"
 #import <UIKit/UIKit.h>
 
-@protocol DCRichMessageRegularApiModel @end;
+@protocol CMLRichMessageRegularApiModel @end;
 @protocol DCNoteInfoModel @end;
 
 @interface CMLNoteInfoModel : JSONModel
@@ -38,7 +38,7 @@
 @property (nonatomic, copy) NSString<Optional> *text_align;       ///< 文本排版（居中/居左/居右）
 
 ///< 描述message具体富文本样式
-@property (nonatomic, copy) NSArray <Optional, DCRichMessageRegularApiModel> *rich_message;
+@property (nonatomic, copy) NSArray <Optional, CMLRichMessageRegularApiModel> *rich_message;
 
 ///< 文字图片一起时 是否图片在右边 default is NO 图片在左边. 判断是否为 @"1"
 @property (nonatomic, copy) NSString<Optional> *is_icon_right;
